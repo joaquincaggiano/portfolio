@@ -41,7 +41,7 @@ const LocaleSwitcher = () => {
               onPress={() => onSelectChange("es")}
               startContent={<EspFlagSvg />}
               variant="light"
-              className="text-base text-white font-normal hover:!bg-transparent"
+              className="text-base text-white font-normal hover:!bg-blueDark"
             >
               ES
             </Button>
@@ -50,7 +50,7 @@ const LocaleSwitcher = () => {
               onPress={() => onSelectChange("en")}
               startContent={<UsaFlagSvg />}
               variant="light"
-              className="text-base text-white font-normal hover:!bg-transparent"
+              className="text-base text-white font-normal hover:!bg-blueDark"
             >
               EN
             </Button>
