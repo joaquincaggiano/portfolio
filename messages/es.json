@@ -7,7 +7,7 @@
   },
   "Home": {
     "welcome": "Hola 🖖🏻! Soy",
-    "presentation": "Me considero una persona con mucha curiosidad, lo que me permite estar aprendiendo constantemente nuevas herramientas e implementaciones. Disfruto del trabajo en equipo y de la colaboración entre todos para alcanzar los objetivos. Estoy abierto a nuevas ideas y formas de trabajar para mejorar como profesional.",
+    "presentation": "Me especializo en crear interfaces de usuario modernas, fluidas y visualmente atractivas, combinando diseño y funcionalidad para ofrecer experiencias digitales impactantes. Trabajo con tecnologías como React, React Native y Next.js, desarrollando aplicaciones móviles y páginas web a medida.",
     "nameFunction": "bienvenida",
     "aboutMe": "sobreMi",
     "name": "nombre",
@@ -22,5 +22,16 @@
     "argentina": "Argentina",
     "italian": "Italiana",
     "viewCV": "Ver CV"
+  },
+  "Skills": {
+    "title": "Tecnologías",
+    "js": "JavaScript (JS) es un lenguaje de programación ligero, interpretado, o compilado justo-a-tiempo (just-in-time) con funciones de primera clase. Es un lenguaje basado en prototipos, multiparadigma, de un solo hilo, dinámico, con soporte para programación orientada a objetos, imperativa y declarativa (por ejemplo programación funcional).",
+    "next": "Next.js es un marco de React para crear aplicaciones web de pila completa. Utiliza React Components para crear interfaces de usuario y Next.js para funciones y optimizaciones adicionales. Debajo del capó, Next.js también abstrae y configura automáticamente las herramientas necesarias para React, como agrupación, compilación y más. Esto le permite concentrarse en crear su aplicación en lugar de dedicar tiempo a la configuración.",
+    "react": "React es una biblioteca de JavaScript para representar interfaces de usuario. La interfaz de usuario se construye a partir de unidades pequeñas como botones, texto e imágenes. React te permite combinarlos en componentes encajables y reutilizables. React Native es un marco de código abierto para crear aplicaciones de Android e iOS utilizando React y las capacidades nativas de la plataforma de aplicaciones.",
+    "firebase": "Firebase es una plataforma en la nube para el desarrollo de aplicaciones web y móvil. Su función esencial es hacer más sencilla la creación de aplicaciones webs como móviles y su desarrollo. Sus herramientas son variadas y de fácil uso. Las finalidades de las mismas se pueden dividir en cuatro grupos: desarrollo, crecimiento, monetización y análisis.",
+    "ts": "TypeScript es un superconjunto de JavaScript que añade tipado estático opcional y funciones avanzadas a JavaScript. Ha sido desarrollado por Microsoft y se publicó por primera vez en octubre de 2012. Permite que podamos escribir código con menos errores, de manera más sencilla, coherente y fácil de probar.",
+    "node": "Node.js es un entorno de ejecución de JavaScript multiplataforma y de código abierto. Una aplicación Node.js se ejecuta en un solo proceso, sin crear un nuevo hilo para cada solicitud. Cuando Node.js realiza una operación de E/S, como acceder a una base de datos, en lugar de bloquear el subproceso y desperdiciar ciclos de CPU esperando, Node.js reanudará las operaciones cuando llegue la respuesta.Esto permite a Node.js manejar miles de conexiones simultáneas con un único servidor.",
+    "prisma": "Prisma es un ORM de código abierto de próxima generación. Consta de las siguientes partes: Prisma Client: generador de consultas generado automáticamente y con seguridad de tipos para Node.js y TypeScript. Prisma Migrate: sistema de migración. Prisma Studio: GUI para ver y editar datos en su base de datos. Prisma Client se puede utilizar en cualquier aplicación backend de Node.js o TypeScript. Puede ser una API REST, una API GraphQL, una API gRPC o cualquier otra cosa que necesite una base de datos.",
+    "postgres": "PostgreSQL es un potente sistema de base de datos relacional de objetos de código abierto que utiliza y amplía el lenguaje SQL combinado con muchas funciones que almacenan y escalan de forma segura las cargas de trabajo de datos más complicadas. PostgreSQL viene con muchas funciones destinadas a ayudar a los desarrolladores a crear aplicaciones, a proteger la integridad de los datos, a crear entornos tolerantes a fallas, y ayudarlos a administrar sus datos sin importar cuán grande o pequeño sea el conjunto de datos."
   }
 }

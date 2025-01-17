@@ -18,6 +18,22 @@ export default {
         blueLight1: "#62d5ff",
         violetPrimary: "#ff58cd",
       },
+      borderColor: {
+        bluePrimary: "#006aa0",
+        blueDark: "#00375b",
+        blueLight: "#00a8ef",
+        blueLight1: "#62d5ff",
+        violetPrimary: "#ff58cd",
+      },
+      keyframes: {
+        customBounce: {
+          '0%, 100%': { transform: 'translateY(-5%)', animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)' },
+          '50%': { transform: 'translateY(0)', animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)' },
+        },
+      },
+      animation: {
+        customBounce: 'customBounce 2s infinite',
+      },
     },
   },
   darkMode: "class",

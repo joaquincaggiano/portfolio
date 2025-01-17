@@ -4,8 +4,8 @@ import { useLocale } from "next-intl";
 import { useState, useTransition } from "react";
 import { Button } from "@heroui/button";
 import { Card, CardBody } from "@heroui/card";
-import EspFlagSvg from "../svg/EspFlagSvg";
-import UsaFlagSvg from "../svg/UsaFlagSvg";
+import EspFlagSvg from "../icons/EspFlagSvg";
+import UsaFlagSvg from "../icons/UsaFlagSvg";
 import { usePathname, useRouter } from "@/i18n/routing";
 
 const LocaleSwitcher = () => {
@@ -34,23 +34,23 @@ const LocaleSwitcher = () => {
       </Button>
 
       {openModal && (
-        <Card className="absolute top-14 w-full max-w-[100px] bg-gradient-to-r from-blue-dark to-blue-light">
+        <Card className="absolute top-14 w-full max-w-[100px] bg-gradient-to-r from-blueDark to-blueLight">
           <CardBody className="flex flex-col">
             <Button
               disabled={isPending}
               onPress={() => onSelectChange("es")}
-              endContent={<EspFlagSvg />}
+              startContent={<EspFlagSvg />}
               variant="light"
-              className="text-base"
+              className="text-base text-white font-normal hover:!bg-transparent"
             >
               ES
             </Button>
             <Button
               disabled={isPending}
               onPress={() => onSelectChange("en")}
-              endContent={<UsaFlagSvg />}
+              startContent={<UsaFlagSvg />}
               variant="light"
-              className="text-base"
+              className="text-base text-white font-normal hover:!bg-transparent"
             >
               EN
             </Button>
