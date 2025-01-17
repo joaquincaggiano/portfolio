@@ -560,7 +560,7 @@
     "@react-types/menu" "3.9.13"
     "@react-types/shared" "3.26.0"
 
-"@heroui/modal@2.2.7":
+"@heroui/modal@2.2.7", "@heroui/modal@^2.2.7":
   version "2.2.7"
   resolved "https://registry.yarnpkg.com/@heroui/modal/-/modal-2.2.7.tgz#4cc452f07c501c30a2f5bae2477c790ca344e844"
   integrity sha512-kCx7VBYAwm+27dglJJYS8cRzjcANQl8cD5kWgyuAtCEDJoKgnIrS99otFKveyJ2Khfp/7XjB2sc2wQxjN82rig==

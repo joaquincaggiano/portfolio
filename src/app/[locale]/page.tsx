@@ -1,10 +1,99 @@
+import Skill from "@/components/home/Skill";
 import Vsc from "@/components/home/vsc";
+import DrizzleSvg from "@/components/icons/DrizzleSvg";
+import ExpressSvg from "@/components/icons/ExpressSvg";
 import EyeSvg from "@/components/icons/EyeSvg";
+import JsSvg from "@/components/icons/JsSvg";
+import NestSvg from "@/components/icons/NestSvg";
+import NextSvg from "@/components/icons/NextSvg";
+import NextUISvg from "@/components/icons/NextUISvg";
+import NodeSvg from "@/components/icons/NodeSvg";
+import PostgresSvg from "@/components/icons/PostgresSvg";
+import PrismaSvg from "@/components/icons/PrismaSvg";
+import ReactSvg from "@/components/icons/ReactSvg";
+import StyledComponentSvg from "@/components/icons/StyledComponentSvg";
+import TailwindSvg from "@/components/icons/TailwindSvg";
+import TsSvg from "@/components/icons/TsSvg";
+import ZustandSvg from "@/components/icons/ZustandSvg";
 import { useLocale, useTranslations } from "next-intl";
 
 export default function Home() {
   const t = useTranslations();
   const localActive = useLocale();
+
+  const skills = [
+    {
+      name: "Javascript",
+      icon: <JsSvg />,
+      description: t("Skills.js"),
+    },
+    {
+      name: "Next.js",
+      icon: <NextSvg />,
+      description: t("Skills.next"),
+    },
+    {
+      name: "React / Native",
+      icon: <ReactSvg width="80" height="80" />,
+      description: t("Skills.react"),
+    },
+    {
+      name: "Typescript",
+      icon: <TsSvg />,
+      description: t("Skills.ts"),
+    },
+    {
+      name: "Node.js",
+      icon: <NodeSvg />,
+      description: t("Skills.node"),
+    },
+    {
+      name: "Express.js",
+      icon: <ExpressSvg />,
+      description: t("Skills.express"),
+    },
+    {
+      name: "Nest.js",
+      icon: <NestSvg />,
+      description: t("Skills.nest"),
+    },
+    {
+      name: "Zustand",
+      icon: <ZustandSvg />,
+      description: t("Skills.zustand"),
+    },
+    {
+      name: "NextUI",
+      icon: <NextUISvg />,
+      description: t("Skills.nextui"),
+    },
+    {
+      name: "Tailwind",
+      icon: <TailwindSvg />,
+      description: t("Skills.tailwind"),
+    },
+    {
+      name: "Styled Components",
+      icon: <StyledComponentSvg />,
+      description: t("Skills.styled"),
+    },
+    {
+      name: "Prisma",
+      icon: <PrismaSvg />,
+      description: t("Skills.prisma"),
+    },
+    {
+      name: "Drizzle",
+      icon: <DrizzleSvg />,
+      description: t("Skills.drizzle"),
+    },
+    {
+      name: "Postgres",
+      icon: <PostgresSvg />,
+      description: t("Skills.postgres"),
+    },
+
+  ];
 
   return (
     <>
@@ -51,11 +140,11 @@ export default function Home() {
         {t("Skills.title")}
       </h2>
 
-      {/* <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center">
         <div className="w-full lg:max-w-[70%] grid grid-cols-2 sm:grid-cols-4 gap-5">
           {skills.map((skill) => {
             return (
-              <CardSkill
+              <Skill
                 key={skill.name}
                 name={skill.name}
                 icon={skill.icon}
@@ -64,7 +153,7 @@ export default function Home() {
             );
           })}
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
