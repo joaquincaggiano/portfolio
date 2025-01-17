@@ -1,0 +1,26 @@
+{
+  "Header": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "contact": "Contacto"
+  },
+  "Home": {
+    "welcome": "Hola 🖖🏻! Soy",
+    "presentation": "Me considero una persona con mucha curiosidad, lo que me permite estar aprendiendo constantemente nuevas herramientas e implementaciones. Disfruto del trabajo en equipo y de la colaboración entre todos para alcanzar los objetivos. Estoy abierto a nuevas ideas y formas de trabajar para mejorar como profesional.",
+    "nameFunction": "bienvenida",
+    "aboutMe": "sobreMi",
+    "name": "nombre",
+    "lastName": "apellido",
+    "age": "edad",
+    "languages": "idiomas",
+    "spanish": "español",
+    "english": "inglés",
+    "currentCountry": "paisActual",
+    "spain": "España",
+    "nationality": "nacionalidad",
+    "argentina": "Argentina",
+    "italian": "Italiana",
+    "viewCV": "Ver CV"
+  }
+}
