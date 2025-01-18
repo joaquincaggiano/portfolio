@@ -1,4 +1,7 @@
 {
+  "common": {
+    "close": "Cerrar"
+  },
   "Header": {
     "home": "Inicio",
     "projects": "Proyectos",
