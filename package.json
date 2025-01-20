@@ -6,12 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "migrate": "prisma migrate dev",
-    "seed": "prisma db seed"
-  },
-  "prisma": {
-    "seed": "tsx prisma/seed.ts"
+    "lint": "next lint"
   },
   "dependencies": {
     "@heroui/button": "^2.2.9",
@@ -21,13 +16,13 @@
     "@heroui/react": "^2.6.13",
     "@heroui/system": "^2.4.6",
     "@heroui/theme": "^2.4.5",
-    "@prisma/client": "^6.2.1",
     "framer-motion": "^11.18.1",
     "heroui-cli": "^0.5.4",
     "next": "15.1.5",
     "next-intl": "^3.26.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "resend": "^4.1.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -37,9 +32,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.1.5",
     "postcss": "^8",
-    "prisma": "^6.2.1",
     "tailwindcss": "^3.4.1",
-    "tsx": "^4.19.2",
     "typescript": "^5"
   }
 }
