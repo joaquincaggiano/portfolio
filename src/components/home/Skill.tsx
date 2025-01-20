@@ -25,12 +25,12 @@ const Skill = ({ name, icon, description }: Props) => {
   return (
     <>
       <div
-        className="flex flex-col justify-between items-center p-2 mb-3 cursor-pointer transform hover:scale-125 transition duration-300"
+        className="flex flex-col justify-between items-center gap-3 p-2 mb-3 cursor-pointer transform hover:scale-125 transition duration-300"
         onClick={() => setOpenModal(true)}
       >
         {icon}
 
-        <h4 className="mt-3 text-base">{name}</h4>
+        <h4 className="text-base text-white font-normal">{name}</h4>
       </div>
 
       <Modal

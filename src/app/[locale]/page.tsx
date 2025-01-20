@@ -102,7 +102,7 @@ export default function Home() {
         <div className="flex flex-col w-full lg:max-w-[40%] xl:max-w-[600px] animate-slide-in-left">
           {/* Saludo */}
           <div className="w-full max-w-[300px] self-center md:max-w-[400px] lg:max-w-[100%]">
-            <h1 className="text-2xl md:text-3xl xl:text-4xl mb-5 text-center lg:text-start">
+            <h1 className="text-2xl md:text-3xl xl:text-4xl mb-5 text-center lg:text-start font-medium text-white">
               {t("Home.welcome")}{" "}
               <span className="text-blueLight">Joaquín</span>, Frontend
               Developer 👨🏼‍💻
@@ -110,7 +110,7 @@ export default function Home() {
           </div>
 
           {/* Breve texto de cómo soy */}
-          <div className="text-lg lg:text-xl xl:text-2xl text-center w-full max-w-[500px] self-center md:max-w-[600px] lg:max-w-[100%] lg:text-start">
+          <div className="text-lg lg:text-xl xl:text-2xl text-center w-full max-w-[500px] self-center md:max-w-[600px] lg:max-w-[100%] lg:text-start text-white font-normal">
             {t("Home.presentation")}
           </div>
 

@@ -11,9 +11,9 @@ import {
   NavbarMenuToggle,
 } from "@heroui/navbar";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
 import LocaleSwitcher from "./locale-switcher";
+import { Link } from "@/i18n/routing";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,11 +52,11 @@ const Header = () => {
           {menuItems.map((item, index) => (
             <NavbarItem
               key={`${item}-${index}`}
-              style={{ color: pathname === item.link ? "#00a8ef" : "#FFF" }}
+              className={`font-medium ${
+                pathname === item.link ? "text-blueLight" : "text-white"
+              } hover:text-blueLight`}
             >
-              <Link href={item.link} className="hover:text-blueLight">
-                {item.title}
-              </Link>
+              <Link href={item.link}>{item.title}</Link>
             </NavbarItem>
           ))}
         </NavbarContent>
@@ -71,18 +71,13 @@ const Header = () => {
         {/* Items menu hamburguesa */}
         <NavbarMenu className="bg-gradient-to-br from-black to-zinc-700 mt-10">
           {menuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                className="w-full"
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === menuItems.length - 1
-                    ? "danger"
-                    : "foreground"
-                }
-                href={item.link}
-              >
+            <NavbarMenuItem
+              key={`${item}-${index}`}
+              className={`font-medium ${
+                pathname === item.link ? "text-blueLight" : "text-white"
+              } hover:text-blueLight`}
+            >
+              <Link href={item.link}>
                 {item.title}
               </Link>
             </NavbarMenuItem>
