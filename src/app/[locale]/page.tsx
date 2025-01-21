@@ -63,7 +63,7 @@ export default function Home() {
       description: t("Skills.zustand"),
     },
     {
-      name: "NextUI",
+      name: "Hero UI",
       icon: <NextUISvg />,
       description: t("Skills.nextui"),
     },
@@ -123,11 +123,11 @@ export default function Home() {
             }
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 w-fit text-center text-white py-3 px-4 mt-5 text-sm font-medium rounded-xl border-2 border-bluePrimary hover:bg-bluePrimary"
+            className="flex items-center gap-2 w-fit text-center text-white py-2 px-2 mt-5 text-xs font-medium rounded-[10px] border-2 border-bluePrimary hover:bg-bluePrimary"
           >
             {t("Home.viewCV")}
 
-            <EyeSvg width={20} height={20} />
+            <EyeSvg width={16} height={16} />
           </a>
         </div>
 

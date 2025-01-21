@@ -9,7 +9,7 @@ interface Props {
     description: string;
     image: string;
     repo: string;
-    video: string;
+    video?: string;
   };
 }
 
@@ -24,7 +24,7 @@ const ProjectCard = ({ project }: Props) => {
         }}
       />
       <div
-        className={`${styles.back} flex flex-col justify-between bg-gradient-to-r from-blueDark to-black`}
+        className={`${styles.back} flex flex-col justify-between bg-gradient-to-br from-black to-zinc-700`}
       >
         <section className="flex flex-col">
           <h2 className="text-lg sm:text-xl md:text-2xl mb-4 font-semibold">
@@ -44,13 +44,15 @@ const ProjectCard = ({ project }: Props) => {
             <GithubSvg width={24} height={24} />
           </a>
 
-          <a
-            href={project.video}
-            target="_blank"
-            className="rounded-full p-2 hover:bg-bluePrimary transition-all duration-300"
-          >
-            <VideoSvg width={24} height={24} color="#ffffff" />
-          </a>
+          {project.video && (
+            <a
+              href={project.video}
+              target="_blank"
+              className="rounded-full p-2 hover:bg-bluePrimary transition-all duration-300"
+            >
+              <VideoSvg width={24} height={24} color="#ffffff" />
+            </a>
+          )}
         </section>
       </div>
     </div>

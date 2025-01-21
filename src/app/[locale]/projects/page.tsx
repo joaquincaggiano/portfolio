@@ -28,6 +28,19 @@ const ProjectsPage = () => {
       repo: "https://github.com/joaquincaggiano/ucademy-dashboard",
       video: "https://vimeo.com/1046219396/e92b3c5b49",
     },
+    {
+      title: "Bite plan",
+      description: t("Projects.biteplan.description"),
+      image: "/img/projects/biteplanner.png",
+      repo: "https://gitlab.com/desaway-apps/menusemanal",
+      video: "https://vimeo.com/1049002203/6c8e537fa0",
+    },
+    {
+      title: "Re-K",
+      description: t("Projects.re-k.description"),
+      image: "/img/projects/re-k.png",
+      repo: "https://gitlab.com/desaway-clients/eclekte",
+    },
   ];
 
   return (

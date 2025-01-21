@@ -53,6 +53,12 @@
     },
     "ucademy": {
       "description": "Ucademy Dashboard is a technical challenge designed for efficient user management, featuring an interactive table to view and manage data, along with a form to add new users."
+    },
+    "biteplan": {
+      "description": "Bite Plan is an application I developed for the Desaway company, which allows users to manage their weekly menus. Organizing dishes by day of the week and allowing for tracking of dishes served."
+    },
+    "re-k": {
+      "description": "Software intended to facilitate the energy rehabilitation of properties. Manages three roles: Promoter, who registers the projects; Agent, executes the projects; and Admin, in charge of coordinating, creating tenders and managing payments."
     }
   }
 }
