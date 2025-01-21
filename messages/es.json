@@ -60,6 +60,17 @@
     "re-k": {
       "description": "Software intento para facilitar la rehabilitación energética de inmuebles. Gestiona tres roles: Promotor, quien registra los proyectos; Agente, ejecuta los proyectos; y Admin, encargado de coordinar, crear licitaciones y gestionar pagos."
     }
+  },
+  "Experience": {
+    "coursesTaken": "Cursos realizados",
+    "projectsDone": "Projectos hechos",
+    "monthsOfExperience": "Meses de experiencia",
+    "coderDate": "Abril 2023 - Septiembre 2023",
+    "coderDescription": "Empresa dedicada a brindar cursos digitales certificados.",
+    "coderRole": "Tutor de alumnos",
+    "desawayDate": "Octubre 2023 - Actualidad",
+    "desawayDescription": "Empresa enfocada en el desarrollo de páginas web, aplicaciones móviles, software y diseño a medida.",
+    "desawayRole": "Frontend Developer"
   }
 }
 

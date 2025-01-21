@@ -34,10 +34,21 @@ export default {
           '0%': { transform: 'translateX(-100%)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' },
         },
+        "fade-in-down": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-20px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         customBounce: 'customBounce 2s infinite',
         'slide-in-left': 'slideInLeft 0.5s ease-out',
+        "fade-in-down": "fade-in-down 0.5s ease-out",
       },
       boxShadow: {
         'blue-primary': '0px 0px 18px 9px #006aa0',

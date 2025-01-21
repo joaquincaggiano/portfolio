@@ -1,6 +1,6 @@
 "use client";
 
-import ProjectCard from "@/components/projects/ProjectCard";
+import ProjectCard from "@/components/cards/ProjectCard";
 import { useTranslations } from "next-intl";
 
 const ProjectsPage = () => {
