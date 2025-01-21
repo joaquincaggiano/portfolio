@@ -43,5 +43,16 @@
     "tailwind": "Tailwind CSS es un framework CSS utilitario que simplifica el proceso de creación de diseños personalizados. Es una biblioteca que proporciona un conjunto de características para construir aplicaciones web y móviles. Es una biblioteca que proporciona un conjunto de características para construir aplicaciones web y móviles.",
     "styled": "Styled Components es una biblioteca que proporciona un conjunto de características para construir aplicaciones web y móviles. Es una biblioteca que proporciona un conjunto de características para construir aplicaciones web y móviles. Es una biblioteca que proporciona un conjunto de características para construir aplicaciones web y móviles.",
     "drizzle": "Drizzle es una biblioteca que proporciona un conjunto de características para construir aplicaciones web y móviles. Es una biblioteca que proporciona un conjunto de características para construir aplicaciones web y móviles. Es una biblioteca que proporciona un conjunto de características para construir aplicaciones web y móviles."
+  },
+  "Projects": {
+    "worldRank": {
+      "description": "World Rank es una aplicación web que permite consultar información detallada sobre todos los países del mundo, con opciones de filtrado por nombre, región y subregión."
+    },
+    "videxthub": {
+      "description": "Desafío técnico que implica explorar un catálogo de videos, acceder a los detalles de cada uno con información completa y la capacidad de subir nuevos videos."
+    },
+    "ucademy": {
+      "description": "Ucademy Dashboard es un reto técnico diseñado para gestionar usuarios de manera eficiente, con una tabla interactiva para visualizar y administrar datos, y un formulario para agregar nuevos usuarios."
+    }
   }
 }

@@ -30,9 +30,17 @@ export default {
           '0%, 100%': { transform: 'translateY(-5%)', animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)' },
           '50%': { transform: 'translateY(0)', animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)' },
         },
+        slideInLeft: {
+          '0%': { transform: 'translateX(-100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
       },
       animation: {
         customBounce: 'customBounce 2s infinite',
+        'slide-in-left': 'slideInLeft 0.5s ease-out',
+      },
+      boxShadow: {
+        'blue-primary': '0px 0px 18px 9px #006aa0',
       },
     },
   },

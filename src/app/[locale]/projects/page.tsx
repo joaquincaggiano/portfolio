@@ -1,7 +1,46 @@
-const ProjectsPage = () => {
-  return (
-    <div>ProjectsPage</div>
-  )
-}
+"use client";
 
-export default ProjectsPage
+import ProjectCard from "@/components/projects/ProjectCard";
+import { useTranslations } from "next-intl";
+
+const ProjectsPage = () => {
+  const t = useTranslations();
+
+  const projects = [
+    {
+      title: "World Rank",
+      description: t("Projects.worldRank.description"),
+      image: "/img/projects/world-rank.png",
+      repo: "https://github.com/joaquincaggiano/world-ranks",
+      video: "https://vimeo.com/1046136928/984a2319a4",
+    },
+    {
+      title: "VidextHub",
+      description: t("Projects.videxthub.description"),
+      image: "/img/projects/videxthub.png",
+      repo: "https://github.com/joaquincaggiano/vidext-hub",
+      video: "https://vimeo.com/1046153632/77820b2b7f",
+    },
+    {
+      title: "Ucademy Dashboard",
+      description: t("Projects.ucademy.description"),
+      image: "/img/projects/ucademy.png",
+      repo: "https://github.com/joaquincaggiano/ucademy-dashboard",
+      video: "https://vimeo.com/1046219396/e92b3c5b49",
+    },
+  ];
+
+  return (
+    <div className="flex flex-col justify-center items-center gap-20">
+      <div className="flex justify-center items-center">
+        <div className="w-full grid grid-cols-1 gap-10 sm:grid-cols-2 xl:grid-cols-4">
+          {projects.map((project) => {
+            return <ProjectCard key={project.title} project={project} />;
+          })}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ProjectsPage;

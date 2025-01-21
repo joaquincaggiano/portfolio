@@ -43,5 +43,16 @@
     "tailwind": "Tailwind CSS is a utility-first CSS framework that streamlines the process of building custom designs. It is a library that provides a set of features for building web and mobile applications. It is a library that provides a set of features for building web and mobile applications.",
     "styled": "Styled Components is a library that provides a set of features for building web and mobile applications. It is a library that provides a set of features for building web and mobile applications. It is a library that provides a set of features for building web and mobile applications.",
     "drizzle": "Drizzle is a library that provides a set of features for building web and mobile applications. It is a library that provides a set of features for building web and mobile applications. It is a library that provides a set of features for building web and mobile applications."
+  },
+  "Projects": {
+    "worldRank": {
+      "description": "World Rank is a web application that allows users to access detailed information about all the countries in the world, with filtering options by name, region, and subregion."
+    },
+    "videxthub": {
+      "description": "A technical challenge that involves exploring a catalog of videos, accessing detailed information for each one, and the ability to upload new videos."
+    },
+    "ucademy": {
+      "description": "Ucademy Dashboard is a technical challenge designed for efficient user management, featuring an interactive table to view and manage data, along with a form to add new users."
+    }
   }
 }
