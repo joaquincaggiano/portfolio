@@ -2,9 +2,10 @@
 interface Props {
   width?: number;
   height?: number;
+  color?: string;
 }
 
-const GithubSvg = ({ width = 20, height = 20 }: Props) => {
+const GithubSvg = ({ width = 20, height = 20, color = "#FFFFFF" }: Props) => {
   return (
     <svg
       viewBox="0 0 20 20"
@@ -13,7 +14,7 @@ const GithubSvg = ({ width = 20, height = 20 }: Props) => {
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      fill="#000000"
+      fill={color}
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
@@ -32,7 +33,7 @@ const GithubSvg = ({ width = 20, height = 20 }: Props) => {
           <g
             id="Dribbble-Light-Preview"
             transform="translate(-140.000000, -7559.000000)"
-            fill="#ffffff"
+            fill={color}
           >
             <g id="icons" transform="translate(56.000000, 160.000000)">
               <path

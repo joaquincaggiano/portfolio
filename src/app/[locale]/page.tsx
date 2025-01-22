@@ -4,6 +4,7 @@ import Skill from "@/components/home/Skill";
 import Vsc from "@/components/home/vsc";
 import DrizzleSvg from "@/components/icons/DrizzleSvg";
 import ExpressSvg from "@/components/icons/ExpressSvg";
+import GithubSvg from "@/components/icons/GithubSvg";
 import GmailSvg from "@/components/icons/GmailSvg";
 import JsSvg from "@/components/icons/JsSvg";
 import LinkedinSvg from "@/components/icons/LinkedinSvg";
@@ -29,7 +30,7 @@ export default function Home() {
   const [resumeColor, setResumeColor] = useState("#FFFF");
   const [gmailColor, setGmailColor] = useState("#FFFF");
   const [linkedinColor, setLinkedinColor] = useState("#FFFF");
-
+  const [githubColor, setGithubColor] = useState("#FFFF");
   const skills = [
     {
       name: "Javascript",
@@ -122,44 +123,63 @@ export default function Home() {
             {t("Home.presentation")}
           </div>
 
-          <div className="flex flex-col gap-2 mt-5">
-            {/* Boton ver CV */}
-            <a
-              href={
-                localActive === "es"
-                  ? "/pdf/cv-joaquin-caggiano-esp.pdf"
-                  : "/pdf/cv-joaquin-caggiano-eng.pdf"
-              }
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-fit flex items-center gap-2 text-sm font-medium text-transparent bg-clip-text bg-gradient-to-r from-white to-violetPrimary hover:text-violetPrimary"
-              onMouseEnter={() => setResumeColor("#ff58cd")}
-              onMouseLeave={() => setResumeColor("#FFFF")}
-            >
-              <ResumeSvg width={24} height={24} color={resumeColor} />
-              <span>{t("Home.resume")}</span>
-            </a>
+          {/* Links */}
+          <div className="flex flex-col gap-5 sm:flex-row sm:justify-center sm:items-center sm:gap-10 lg:flex-col lg:justify-start lg:items-start lg:gap-5 xl:flex-row xl:items-center xl:gap-10 mt-5">
+            <div className="flex flex-col gap-5">
+              {/* Cv */}
+              <a
+                href={
+                  localActive === "es"
+                    ? "/pdf/cv-joaquin-caggiano-esp.pdf"
+                    : "/pdf/cv-joaquin-caggiano-eng.pdf"
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-fit flex items-center gap-2 text-sm font-medium text-transparent bg-clip-text bg-gradient-to-r from-white to-violetPrimary hover:text-violetPrimary"
+                onMouseEnter={() => setResumeColor("#ff58cd")}
+                onMouseLeave={() => setResumeColor("#FFFF")}
+              >
+                <ResumeSvg width={24} height={24} color={resumeColor} />
+                <span>{t("Home.resume")}</span>
+              </a>
 
-            <a
-              href="mailto:joaquincaggiano@gmail.com"
-              className="w-fit flex items-center gap-2 text-sm font-medium text-transparent bg-clip-text bg-gradient-to-r from-white to-[#DB4437] hover:text-[#DB4437]"
-              onMouseEnter={() => setGmailColor("#DB4437")}
-              onMouseLeave={() => setGmailColor("#FFFF")}
-            >
-              <GmailSvg width={24} height={24} color={gmailColor} />
-              <span>joaquincaggiano@gmail.com</span>
-            </a>
+              {/* Linkedin */}
+              <a
+                href="https://www.linkedin.com/in/joaquin-caggiano-dev/"
+                target="_blank"
+                className="w-fit flex items-center gap-2 text-sm font-medium text-transparent bg-clip-text bg-gradient-to-r from-white to-[#0288D1] hover:text-[#0288D1]"
+                onMouseEnter={() => setLinkedinColor("#0288D1")}
+                onMouseLeave={() => setLinkedinColor("#FFFF")}
+              >
+                <LinkedinSvg width={24} height={24} color={linkedinColor} />
+                <span>joaquin-caggiano-dev</span>
+              </a>
+            </div>
 
-            <a
-              href="https://www.linkedin.com/in/joaquin-caggiano-dev/"
-              target="_blank"
-              className="w-fit flex items-center gap-2 text-sm font-medium text-transparent bg-clip-text bg-gradient-to-r from-white to-[#0288D1] hover:text-[#0288D1]"
-              onMouseEnter={() => setLinkedinColor("#0288D1")}
-              onMouseLeave={() => setLinkedinColor("#FFFF")}
-            >
-              <LinkedinSvg width={24} height={24} color={linkedinColor} />
-              <span>joaquincaggiano</span>
-            </a>
+            <div className="flex flex-col gap-5">
+              {/* Github */}
+              <a
+                href="https://github.com/joaquincaggiano"
+                target="_blank"
+                className="w-fit flex items-center gap-2 text-sm font-medium text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500 hover:text-gray-500"
+                onMouseEnter={() => setGithubColor("#6b7280")}
+                onMouseLeave={() => setGithubColor("#FFFF")}
+              >
+                <GithubSvg width={24} height={24} color={githubColor} />
+                <span>joaquincaggiano</span>
+              </a>
+
+              {/* Gmail */}
+              <a
+                href="mailto:joaquincaggiano@gmail.com"
+                className="w-fit flex items-center gap-2 text-sm font-medium text-transparent bg-clip-text bg-gradient-to-r from-white to-[#DB4437] hover:text-[#DB4437]"
+                onMouseEnter={() => setGmailColor("#DB4437")}
+                onMouseLeave={() => setGmailColor("#FFFF")}
+              >
+                <GmailSvg width={24} height={24} color={gmailColor} />
+                <span>joaquincaggiano@gmail.com</span>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -174,16 +194,18 @@ export default function Home() {
 
       <div className="flex justify-center items-center">
         <div className="w-full lg:max-w-[70%] grid grid-cols-2 sm:grid-cols-4 gap-5">
-          {skills.map((skill) => {
-            return (
-              <Skill
-                key={skill.name}
-                name={skill.name}
-                icon={skill.icon}
-                description={skill.description}
-              />
-            );
-          })}
+          {skills
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((skill) => {
+              return (
+                <Skill
+                  key={skill.name}
+                  name={skill.name}
+                  icon={skill.icon}
+                  description={skill.description}
+                />
+              );
+            })}
         </div>
       </div>
     </>
