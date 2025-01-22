@@ -26,9 +26,9 @@ export default {
         violetPrimary: "#ff58cd",
       },
       keyframes: {
-        customBounce: {
-          '0%, 100%': { transform: 'translateY(-5%)', animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)' },
-          '50%': { transform: 'translateY(0)', animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)' },
+        bounceVertical: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-20px)" },
         },
         slideInLeft: {
           '0%': { transform: 'translateX(-100%)', opacity: '0' },
@@ -46,7 +46,7 @@ export default {
         },
       },
       animation: {
-        customBounce: 'customBounce 2s infinite',
+        bounceVertical: "bounceVertical 2s ease-in-out infinite",
         'slide-in-left': 'slideInLeft 0.5s ease-out',
         "fade-in-down": "fade-in-down 0.5s ease-out",
       },

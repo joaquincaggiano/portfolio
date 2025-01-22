@@ -25,11 +25,10 @@ const Header = () => {
     { title: t("home"), link: "/" },
     { title: t("projects"), link: "/projects" },
     { title: t("experience"), link: "/experience" },
-    { title: t("contact"), link: "/contact" },
   ];
 
   return (
-    <header className="px-8 sm:px-16 md:px-24 lg:px-16 pt-8">
+    <header className="px-8 sm:px-16 md:px-24 lg:px-16 pt-8 mb-8">
       <Navbar
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}

@@ -1,9 +1,12 @@
+"use client";
+
 import Skill from "@/components/home/Skill";
 import Vsc from "@/components/home/vsc";
 import DrizzleSvg from "@/components/icons/DrizzleSvg";
 import ExpressSvg from "@/components/icons/ExpressSvg";
-import EyeSvg from "@/components/icons/EyeSvg";
+import GmailSvg from "@/components/icons/GmailSvg";
 import JsSvg from "@/components/icons/JsSvg";
+import LinkedinSvg from "@/components/icons/LinkedinSvg";
 import NestSvg from "@/components/icons/NestSvg";
 import NextSvg from "@/components/icons/NextSvg";
 import NextUISvg from "@/components/icons/NextUISvg";
@@ -11,15 +14,21 @@ import NodeSvg from "@/components/icons/NodeSvg";
 import PostgresSvg from "@/components/icons/PostgresSvg";
 import PrismaSvg from "@/components/icons/PrismaSvg";
 import ReactSvg from "@/components/icons/ReactSvg";
+import ResumeSvg from "@/components/icons/ResumeSvg";
 import StyledComponentSvg from "@/components/icons/StyledComponentSvg";
 import TailwindSvg from "@/components/icons/TailwindSvg";
 import TsSvg from "@/components/icons/TsSvg";
 import ZustandSvg from "@/components/icons/ZustandSvg";
 import { useLocale, useTranslations } from "next-intl";
+import { useState } from "react";
 
 export default function Home() {
   const t = useTranslations();
   const localActive = useLocale();
+
+  const [resumeColor, setResumeColor] = useState("#FFFF");
+  const [gmailColor, setGmailColor] = useState("#FFFF");
+  const [linkedinColor, setLinkedinColor] = useState("#FFFF");
 
   const skills = [
     {
@@ -92,7 +101,6 @@ export default function Home() {
       icon: <PostgresSvg />,
       description: t("Skills.postgres"),
     },
-
   ];
 
   return (
@@ -114,21 +122,45 @@ export default function Home() {
             {t("Home.presentation")}
           </div>
 
-          {/* Boton ver CV */}
-          <a
-            href={
-              localActive === "es"
-                ? "/pdf/cv-joaquin-caggiano-esp.pdf"
-                : "/pdf/cv-joaquin-caggiano-eng.pdf"
-            }
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 w-fit text-center text-white py-2 px-2 mt-5 text-xs font-medium rounded-[10px] border-2 border-bluePrimary hover:bg-bluePrimary"
-          >
-            {t("Home.viewCV")}
+          <div className="flex flex-col gap-2 mt-5">
+            {/* Boton ver CV */}
+            <a
+              href={
+                localActive === "es"
+                  ? "/pdf/cv-joaquin-caggiano-esp.pdf"
+                  : "/pdf/cv-joaquin-caggiano-eng.pdf"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-fit flex items-center gap-2 text-sm font-medium text-transparent bg-clip-text bg-gradient-to-r from-white to-violetPrimary hover:text-violetPrimary"
+              onMouseEnter={() => setResumeColor("#ff58cd")}
+              onMouseLeave={() => setResumeColor("#FFFF")}
+            >
+              <ResumeSvg width={24} height={24} color={resumeColor} />
+              <span>{t("Home.resume")}</span>
+            </a>
 
-            <EyeSvg width={16} height={16} />
-          </a>
+            <a
+              href="mailto:joaquincaggiano@gmail.com"
+              className="w-fit flex items-center gap-2 text-sm font-medium text-transparent bg-clip-text bg-gradient-to-r from-white to-[#DB4437] hover:text-[#DB4437]"
+              onMouseEnter={() => setGmailColor("#DB4437")}
+              onMouseLeave={() => setGmailColor("#FFFF")}
+            >
+              <GmailSvg width={24} height={24} color={gmailColor} />
+              <span>joaquincaggiano@gmail.com</span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/joaquin-caggiano-dev/"
+              target="_blank"
+              className="w-fit flex items-center gap-2 text-sm font-medium text-transparent bg-clip-text bg-gradient-to-r from-white to-[#0288D1] hover:text-[#0288D1]"
+              onMouseEnter={() => setLinkedinColor("#0288D1")}
+              onMouseLeave={() => setLinkedinColor("#FFFF")}
+            >
+              <LinkedinSvg width={24} height={24} color={linkedinColor} />
+              <span>joaquincaggiano</span>
+            </a>
+          </div>
         </div>
 
         {/* Datos personales - VSC */}

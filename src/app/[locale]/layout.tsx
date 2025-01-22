@@ -41,7 +41,6 @@ export default async function RootLayout({
       >
         <ProviderUI>
           <NextIntlClientProvider messages={messages}>
-
             <Header />
             <main className="flex flex-col flex-grow min-h-screen p-5 sm:p-10">
               {children}

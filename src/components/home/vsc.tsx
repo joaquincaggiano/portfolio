@@ -13,7 +13,7 @@ import UserSvg from "../icons/UserSvg";
 const Vsc = () => {
   return (
     <div
-      className="flex flex-col w-full lg:max-w-[40%] xl:max-w-[600px] rounded-md text-md bg-gradient-to-r from-zinc-800 to-zinc-900 animate-customBounce"
+      className="flex flex-col w-full lg:max-w-[40%] xl:max-w-[600px] rounded-md text-md bg-gradient-to-r from-zinc-800 to-zinc-900 animate-bounceVertical"
       style={{ borderWidth: 0.5 }}
     >
       {/* Barra de VSC */}
