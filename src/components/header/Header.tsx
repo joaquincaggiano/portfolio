@@ -13,9 +13,10 @@ import {
 import { useTranslations } from "next-intl";
 import { useSelectedLayoutSegment } from "next/navigation";
 import LocaleSwitcher from "./locale-switcher";
-import { Link } from "@/i18n/routing";
+import { Link, useRouter } from "@/i18n/routing";
 
 const Header = () => {
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const t = useTranslations("Header");
   const selectedLayoutSegment = useSelectedLayoutSegment();
@@ -75,10 +76,12 @@ const Header = () => {
               className={`font-medium ${
                 pathname === item.link ? "text-blueLight" : "text-white"
               } hover:text-blueLight`}
+              onClick={() => {
+                setIsMenuOpen(false);
+                router.push(item.link);
+              }}
             >
-              <Link href={item.link}>
-                {item.title}
-              </Link>
+              {item.title}
             </NavbarMenuItem>
           ))}
         </NavbarMenu>
