@@ -59,6 +59,12 @@
     },
     "re-k": {
       "description": "Software intended to facilitate the energy rehabilitation of properties. Manages three roles: Promoter, who registers the projects; Agent, executes the projects; and Admin, in charge of coordinating, creating tenders and managing payments."
+    },
+    "workhub": {
+      "description": "Platform designed for the management and reservation of workspaces, meeting rooms and shared spaces. Create easily customized and optimized workspaces for your specific needs."
+    },
+    "work-space": {
+      "description": "Make reservations in rooms and shared spaces created and managed from the Work Hub app."
     }
   },
   "Experience": {

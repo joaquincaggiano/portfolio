@@ -34,12 +34,27 @@ const ProjectsPage = () => {
       image: "/img/projects/biteplanner.png",
       repo: "https://gitlab.com/desaway-apps/menusemanal",
       video: "https://vimeo.com/1049002203/6c8e537fa0",
+      download: "https://play.google.com/store/apps/details?id=es.desaway.menuplannerbiteplan"
     },
     {
       title: "Re-K",
       description: t("Projects.re-k.description"),
       image: "/img/projects/re-k.png",
       repo: "https://gitlab.com/desaway-clients/eclekte",
+    },
+    {
+      title: "Work Hub",
+      description: t("Projects.workhub.description"),
+      image: "/img/projects/workhub.png",
+      repo: "https://gitlab.com/desaway-apps/reservaespacios-admin",
+      download: "https://play.google.com/store/apps/details?id=es.desaway.managerooms&hl=es"
+    },
+    {
+      title: "Work Space",
+      description: t("Projects.work-space.description"),
+      image: "/img/projects/work-space.png",
+      repo: "https://gitlab.com/desaway-apps/reservaespacios-user",
+      download: "https://play.google.com/store/apps/details?id=es.desaway.workspace"
     },
   ];
 

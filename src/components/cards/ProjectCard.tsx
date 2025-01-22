@@ -1,4 +1,5 @@
 "use client";
+import DownloadSvg from "../icons/DownloadSvg";
 import GithubSvg from "../icons/GithubSvg";
 import VideoSvg from "../icons/VideoSvg";
 import styles from "./project-card.module.css";
@@ -10,6 +11,7 @@ interface Props {
     image: string;
     repo: string;
     video?: string;
+    download?: string;
   };
 }
 
@@ -51,6 +53,16 @@ const ProjectCard = ({ project }: Props) => {
               className="rounded-full p-2 hover:bg-bluePrimary transition-all duration-300"
             >
               <VideoSvg width={24} height={24} color="#ffffff" />
+            </a>
+          )}
+
+          {project.download && (
+            <a
+              href={project.download}
+              target="_blank"
+              className="rounded-full p-2 hover:bg-bluePrimary transition-all duration-300"
+            >
+              <DownloadSvg width={24} height={24} color="#ffffff" />
             </a>
           )}
         </section>
