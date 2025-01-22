@@ -28,12 +28,13 @@ const ExperiencePage = () => {
       role: t("Experience.coderRole"),
     },
   ];
+
   return (
     <>
       <div className="flex flex-col gap-10 sm:flex-row justify-center items-center mb-20">
         <ExperienceCard targetNumber={7} title={t("Experience.coursesTaken")} />
         <ExperienceCard targetNumber={10} title={t("Experience.projectsDone")} addPlus={true} />
-        <ExperienceCard targetNumber={24} title={t("Experience.monthsOfExperience")} addPlus={true} />
+        <ExperienceCard targetNumber={21} title={t("Experience.monthsOfExperience")} addPlus={true} />
       </div>
 
       <div className="flex flex-col justify-center items-center gap-10">
