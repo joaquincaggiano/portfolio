@@ -1,6 +1,8 @@
 {
   "common": {
-    "close": "Close"
+    "close": "Close",
+    "spanish": "Spanish",
+    "english": "English"
   },
   "Header": {
     "home": "Home",

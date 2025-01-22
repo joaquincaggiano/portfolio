@@ -1,6 +1,8 @@
 {
   "common": {
-    "close": "Cerrar"
+    "close": "Cerrar",
+    "spanish": "Español",
+    "english": "Inglés"
   },
   "Header": {
     "home": "Inicio",
